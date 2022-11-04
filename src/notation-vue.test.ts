@@ -3,14 +3,14 @@ import App from './App.vue';
 
 test('persists the login state', async ({ page, mount }) => {
   const component = await mount(App);
-  await component.getByRole('button', { name: 'login' }).click(); // or mock the api call
+  await component.getByRole('button', { name: 'login' }).click();
   await page.reload();
   await expect(component.getByText('Admin username')).toBeVisible();
 });
 
 test('redirect to the admin page when logged in', async ({ page, mount }) => {
   const component = await mount(App);
-  await component.getByRole('button', { name: 'login' }).click(); // or mock the api call
+  await component.getByRole('button', { name: 'login' }).click();
   await page.goto('/login');
   await expect(component.getByText('admin page')).toBeVisible();
 });
