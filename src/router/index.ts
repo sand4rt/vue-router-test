@@ -9,7 +9,10 @@ const router = createRouter({
     {
       path: '/',
       name: 'login',
-      component: LoginPage
+      component: LoginPage,
+      meta: {
+        authRequired: false,
+      }
     },
     {
       path: '/admin',
@@ -22,7 +25,10 @@ const router = createRouter({
     {
       path: '/:pathMatch(.*)*',
       name: 'not-found',
-      component: NotFoundPage
+      component: NotFoundPage,
+      meta: {
+        authRequired: false,
+      }
     },
   ]
 })
