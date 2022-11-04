@@ -3,7 +3,7 @@ import App from './App.vue';
 
 test('persists the login state', async ({ page, mount }) => {
   const component = await mount(App);
-  await component.getByRole('button', { name: 'login' }).click();
+  await component.getByRole('button', { name: 'login' }).click(); // or mock the api call
   await page.reload();
   await expect(component.getByText('Admin username')).toBeVisible();
 });
