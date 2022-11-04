@@ -14,8 +14,8 @@
     "vue-router": "^4.1.5"
   },
   "devDependencies": {
-    "@playwright/experimental-ct-vue": "^1.27.1",
-    "@playwright/test": "^1.27.1",
+    "@playwright/experimental-ct-vue": "^1.28.0-alpha-nov-4-2022",
+    "@playwright/test": "^1.28.0-alpha-nov-4-2022",
     "@types/node": "^16.11.68",
     "@vitejs/plugin-vue": "^3.1.2",
     "@vue/tsconfig": "^0.1.3",
