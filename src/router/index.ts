@@ -34,7 +34,7 @@ const router = createRouter({
 })
 
 function isAuthenticated() {
-  return Promise.resolve(!!localStorage.getItem('authenticated'));
+  return Promise.resolve(localStorage.getItem('authenticated') === 'true');
 }
 
 function isAuthRequired(route: RouteLocationNormalized) {
